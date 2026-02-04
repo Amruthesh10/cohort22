@@ -7,7 +7,7 @@ const App = () => {
   console.log("app integration")
 
   function fetchdata(){
-  axios.get('http://localhost:3000/api/notes')
+  axios.get('https://cohort22.onrender.com/api/notes')
   .then((res)=>{
     setnote(res.data.note)
   })
@@ -16,7 +16,7 @@ function handleSubmit(e){
   e.preventDefault();
   const {title,description}= e.target.elements;
   console.log(title.value,description.value)
-  axios.post('http://localhost:3000/api/notes',{
+  axios.post('https://cohort22.onrender.com/api/notes',{
     title: title.value,
     description:description.value
   })
@@ -26,7 +26,7 @@ function handleSubmit(e){
   fetchdata()
 }
 function handleDeleteNote(noteId){
-  axios.delete("http://localhost:3000/api/notes/"+noteId)
+  axios.delete("https://cohort22.onrender.com/api/notes/"+noteId)
   .then(()=>{
     console.log(res.data)
   })
