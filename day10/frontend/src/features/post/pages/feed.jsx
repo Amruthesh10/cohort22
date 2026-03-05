@@ -4,6 +4,7 @@ import Post from "../component/post"
 import { usePost } from "../hook/use.post"
 import Nav from "../../shared/components/Nav"
 
+
 const Feed = () => {
   const { handleFeed, feed,loading,handleLike,handleUnLike } = usePost()
 
@@ -35,6 +36,7 @@ const Feed = () => {
                 handleUnlike={handleUnLike}
               />
             ))}
+           
           </div>
         </div>
       </div>
