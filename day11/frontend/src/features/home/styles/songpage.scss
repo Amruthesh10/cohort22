@@ -1,0 +1,107 @@
+.song-page {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+
+  .title {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+
+  .mood-section {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+
+    select {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #1db954;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        background: #17a84a;
+      }
+    }
+  }
+
+  .player-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 320px;
+
+    .poster {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    audio {
+      width: 100%;
+    }
+  }
+
+  .upload-section {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+     width: 320px;
+  max-width: 100%;
+    text-align: center;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+
+     
+  input[type="file"] {
+    width: 100%;
+    overflow: hidden;
+  }
+      button {
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        background: #ff7a18;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+          background: #ff6500;
+        }
+      }
+    }
+  }
+
+  .loading {
+    margin-top: 10px;
+  }
+}
