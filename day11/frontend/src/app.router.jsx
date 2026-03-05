@@ -8,18 +8,18 @@ import SongPage from "./features/home/pages/songpage"
 export const router=createBrowserRouter([
     {
         path:'/',
-        element:<Home/>//<Protected><Home/></Protected>
+        element:<Protected><Home/></Protected>
     },
      {
         path:'/create',
-        element:<Protected><SongPage/></Protected>
+        element:<SongPage/>
     },
     {
         path:'/login',
-        element:<Login/>
+        element:<Login />
     },
     {
         path:'/register',
-        element:<Register/>
+        element:<Register />
     }
 ])
