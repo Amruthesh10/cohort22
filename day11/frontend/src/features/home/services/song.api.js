@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const api = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: "https://cohort22-2.onrender.com",
     withCredentials: true
 })
 export async function uploadSong({ file, mood }) {
